@@ -10,7 +10,6 @@ This project analyzes the sentiment of user reviews for various AI chat applicat
 - Provides an interactive dashboard for visualizing the results
 
 ## Screenshot from Dash App
-
 [![capture-20240714173200842.png](https://i.postimg.cc/SRt34FT4/capture-20240714173200842.png)](https://postimg.cc/BPHM5yf7)
 
 ## Installation
