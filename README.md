@@ -1,4 +1,4 @@
-# AI App Review Analyzer
+# AI ChatBot Benchmarker
 
 This project analyzes the sentiment of user reviews for various AI chat applications available on the Google Play Store. It provides insights into user satisfaction and compares sentiment across different apps.
 
@@ -17,8 +17,7 @@ This project analyzes the sentiment of user reviews for various AI chat applicat
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/AIAppReviewAnalyzer.git
-   cd AIAppReviewAnalyzer
+   git clone https://github.com/yusufeneskorkmaz/AIChatBotBenchmarker.git
    ```
 
 2. Create a virtual environment and activate it:
