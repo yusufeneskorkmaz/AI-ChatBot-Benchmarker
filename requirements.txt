@@ -1,0 +1,11 @@
+google-play-scraper
+pandas
+numpy
+matplotlib
+seaborn
+dash
+plotly
+transformers
+torch
+tqdm
+-e .
