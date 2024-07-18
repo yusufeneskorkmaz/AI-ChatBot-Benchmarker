@@ -5,6 +5,7 @@ def main():
     # Define the app IDs
     app_ids = [
         'com.openai.chatgpt',
+        'com.anthropic.claude'
         'com.google.android.apps.bard',
         'com.microsoft.copilot',
         'com.microsoft.bing',

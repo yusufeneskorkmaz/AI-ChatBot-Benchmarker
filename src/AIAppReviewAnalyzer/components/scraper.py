@@ -13,14 +13,16 @@ def scrape_app_reviews(app_id, reviews_count=1000):
                 app_id,
                 continuation_token=continuation_token,
                 lang='en',
-                country='us',
+                country='de',
                 sort=Sort.NEWEST,
-                count=500
+                count=min(500, reviews_count - len(result))
             )
             if not new_result:
                 break
             result.extend(new_result)
             pbar.update(len(new_result))
+            if continuation_token is None:
+                break  # Tüm mevcut yorumlar alındı
 
     df = pd.DataFrame(result)
 
@@ -36,6 +38,7 @@ def scrape_multiple_apps(app_ids, reviews_per_app=1000):
         print(f"Scraping reviews for app: {app_id}")
         app_reviews = scrape_app_reviews(app_id, reviews_per_app)
         all_reviews[app_id] = app_reviews
+        print(f"Scraped {len(app_reviews)} reviews for {app_id}")
     return all_reviews
 
 
@@ -43,6 +46,7 @@ if __name__ == "__main__":
     # Example usage
     app_ids = [
         'com.openai.chatgpt',
+        'com.anthropic.claude',
         'com.google.android.apps.bard',
         'com.microsoft.copilot',
         'com.microsoft.bing',

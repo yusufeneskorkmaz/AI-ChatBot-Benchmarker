@@ -11,7 +11,7 @@ This project analyzes the sentiment of user reviews for various AI chat applicat
 
 ## Screenshot from Dash App
 
-[![capture-20240714173200842.png](https://i.postimg.cc/SRt34FT4/capture-20240714173200842.png)](https://postimg.cc/BPHM5yf7)
+[![Screenshot-2024-07-18-135250.png](https://i.postimg.cc/8PgMkt11/Screenshot-2024-07-18-135250.png)](https://postimg.cc/MXtvd0M4)
 
 ## Installation
 
